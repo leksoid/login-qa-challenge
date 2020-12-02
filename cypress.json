@@ -1,0 +1,4 @@
+{
+    "baseUrl": "http://the-internet.herokuapp.com",
+    "integrationFolder":"cypress/e2e"
+}
