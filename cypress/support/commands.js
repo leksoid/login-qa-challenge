@@ -23,15 +23,3 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
-
-Cypress.Commands.add('submitLoginFormWith', (user) => {
-    if (user.username.length > 0) {
-        cy.get('#username')
-        .type(user.username)
-    }
-    if (user.password.length > 0) {
-        cy.get('#password')
-        .type(user.password)
-    }
-    cy.get('button[type="submit"').click()
-  })
